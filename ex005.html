@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body{
+            background-color: rgba(94, 94, 237, 0.515);
+            font: normal 20px arial ;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="gota">Iniciando os estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em Javascript</p>
+    <div name="msg">
+        Clique em mim
+    </div>
+    <script>   
+        var título = document.querySelector('#gota')
+        var corpo = document.querySelector('body')
+        título.style.color = 'red'
+        corpo.style.backgroundColor = 'black'
+       
+    </script>
+    
+</body>
+</html>
