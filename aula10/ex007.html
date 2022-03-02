@@ -4,23 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Somando númeroa</title>
+    <title>Somando números</title>
+    <style>
+        body{
+            font: normal 20px arial;
+            background-color: rgba(0, 0, 0, 0.254);
+        }
+
+        #pr{
+            background-color: aquamarine;
+            width: 400px;
+            padding-bottom: 30px;
+            padding-left: 40px;
+            margin: auto;
+            border: 5px solid rgb(74, 173, 8);
+            border-radius: 10px;
+            margin-top: 30vh;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.26) ;
+
+        }
+    </style>
 </head>
 <body>
-    <h1>Somando valores</h1>
-    <input type="number" id="texto1"> +
-    <input type="number" id="texto2">
-    <input type="button" value="somar" onclick="somar()">
-    <div id="res">Resultado</div>
+    <div id="pr">
+        <h1>Somando valores</h1>
+        <input type="number" id="texto1"> +
+        <input type="number" id="texto2">
+        <input type="button" value="somar" onclick="soma()">
+        <div id="res">Resultado</div>
+    </div>
     <script>
-        function somar() {
+        function soma() {
             var caixa1 = document.getElementById('texto1')
             var caixa2 = document.getElementById('texto2')
             var resp = document.getElementById('res')
             var n1 = Number(caixa1.value)
             var n2 = Number(caixa2.value)
             s = n1 + n2
-            resp.innerHTML = s
+            resp.innerHTML = (`A soma entre ${n1} e ${n2} é igual à ${s}.`)
         }
     </script>
     
