@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+</head>
+<body>
+
+    <h1>Teste de aprendizado</h1>
+
+    <input type="number" name="x1" id="x1">
+    <input type="button" value="Verificar" onclick="exec()"><!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>teste</title>
+    </head>
+    <body>
+    
+        <h1>Teste de aprendizado</h1>
+    
+        <input type="number" name="x1" id="x1">
+        <input type="button" value="Verificar" onclick="exec()">
+        <p id="res">Aguardando...</p>
+    
+        <script>
+            function exec(){
+                var a = document.getElementById("x1")
+                var b = Number(a.value)
+                var c = document.getElementById("res")
+                c.innerHTML = `<p>Sua velocidade é ${b} km/h</p>`
+                if (b > 60){
+                    c.innerHTML += '<p>Você foi Multado!</p>'
+                }
+                else{
+                    c.innerHTML+= '<p>tenha uma boa viagem</p>'
+                }
+    
+            } 
+    
+        </script>
+        
+    </body>
+    </html>
+    <p id="res">Aguardando...</p>
+
+    <script>
+        function exec(){
+            var a = document.getElementById("x1")
+            var b = Number(a.value)
+            var c = document.getElementById("res")
+            c.innerHTML = `<p>Sua velocidade é ${b} km/h</p>`
+            if (b > 60){
+                c.innerHTML += '<p>Você foi Multado!</p>'
+            }
+            else{
+                c.innerHTML+= '<p>tenha uma boa viagem</p>'
+            }
+
+        } 
+
+    </script>
+    
+</body>
+</html>

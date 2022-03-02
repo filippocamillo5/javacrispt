@@ -4,23 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>teste</title>
 </head>
 <body>
-    <h1>Sistema de multas</h1>
-     Velocidade do carro <input type="number" name="vel" id="vel"> Km/h
-     <input type="button" value="verificar" onclick="calcular()">
-     <div id="res"></div>
 
-     <script>
-         function calcular(){
-            var velo = document.getElementById ('vel')
-            var x = Number(velo.value)
-            var y = document.getElementById ('res')
-            y.innerHTML = `<p>Sua velocidade é  <strong>${x} Km/h</strong></p>`
-            y.innerHTML += `<p>Dirija sempre com segurança</p>`
+    <h1>Teste de aprendizado</h1>
 
-         }
-     </script>
+    <input type="number" name="x1" id="x1">
+    <input type="button" value="Verificar" onclick="exec()">
+    <p id="res">Aguardando...</p>
+
+    <script>
+        function exec(){
+            var a = document.getElementById("x1")
+            var b = Number(a.value)
+            var c = document.getElementById("res")
+            c.innerHTML = `<p>Sua velocidade é ${b} km/h</p>`
+            if (b > 60){
+                c.innerHTML += '<p>Você foi Multado!</p>'
+            }
+            else{
+                c.innerHTML+= '<p>tenha uma boa viagem</p>'
+            }
+
+        } 
+
+    </script>
+    
 </body>
 </html>
