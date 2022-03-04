@@ -1,4 +1,4 @@
-console.log('Vai começar!')
+tyconsole.log('Vai começar!')
 for (var a = 1; a <= 10; a++){
     console.log (`Passo${a}`)
 }
